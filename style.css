@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.photo{
+    position: absolute;
+    width: 20%;
+    top: 40%;
+    left: 0;
+  }
+
+  .titre{
+    margin-top: 130px;
+    margin-left: 600px ;
+  }
+
+.bouton{
+    margin-top: 50px;
+    margin-left: 600px ;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 2em;
+    font-family: sans-serif;
+    padding: 1em 2em;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background: rgb(251, 177, 18);
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.red{
+    background: crimson;
+}
+
+@keyframes wobble {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    15% {
+      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+  
+    30% {
+      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    45% {
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    60% {
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+  
+    75% {
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .wobble {
+    animation-name: wobble;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+
